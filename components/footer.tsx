@@ -17,7 +17,7 @@ export default function Footer() {
               AI on Your Device. Privacy. Performance. Personalization.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon">
+              {/* <Button variant="ghost" size="icon">
                 <Twitter className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon">
@@ -25,7 +25,7 @@ export default function Footer() {
               </Button>
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -126,7 +126,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/privacy-policy"
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
                 >
                   Privacy Policy
@@ -134,7 +134,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/terms-conditions"
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
                 >
                   Terms & Conditions
