@@ -18,15 +18,15 @@ export default function PrivacyPolicy() {
             <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                Last updated: April 30, 2025
+                Last updated: June 11, 2025
               </p>
 
               <h2>1. Introduction</h2>
               <p>
-                Inferra ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application ("App").
+                Ragionare/Inferra ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application ("App").
               </p>
               <p>
-                By using Inferra, you agree to the collection and use of information in accordance with this policy.
+                By using Ragionare/Inferra, you agree to the collection and use of information in accordance with this policy.
               </p>
 
               <h2>2. Information We Collect</h2>
