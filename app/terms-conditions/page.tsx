@@ -11,7 +11,7 @@ export default function TermsConditions() {
           <div className="max-w-3xl mx-auto">
             <Link 
               href="/" 
-              className="inline-flex items-center text-sm mb-6 text-purple-600 hover:text-purple-700"
+              className="inline-flex items-center text-sm mb-6 text-red-500 hover:text-red-600"
             >
               ← Back to home
             </Link>

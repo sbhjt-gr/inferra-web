@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-red-500 to-purple-600 text-transparent bg-clip-text">
               AI on Your Device
             </span>
             <br />
@@ -19,7 +19,7 @@ export default function HeroSection() {
             performance without compromising on capabilities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+            <Button size="lg" className="bg-gradient-to-r from-red-500 to-purple-600 text-white">
               Download Now
             </Button>
             <Link href="#features">
@@ -30,7 +30,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl blur opacity-75"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 to-purple-600 rounded-3xl blur opacity-75"></div>
           <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-xl overflow-hidden">
             <img src="/placeholder.svg?height=600&width=800" alt="Inferra App Interface" className="w-full h-auto" />
           </div>

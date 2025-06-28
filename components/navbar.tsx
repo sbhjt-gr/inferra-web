@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
+              <span className="text-2xl font-bold bg-gradient-to-r from-red-500 to-purple-600 text-transparent bg-clip-text">
                 Inferra
               </span>
             </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
             <Button onClick={toggleTheme} variant="ghost" size="icon">
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white">Get Started</Button>
+            <Button className="bg-gradient-to-r from-red-500 to-purple-600 text-white">Get Started</Button>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -93,7 +93,7 @@ export default function Navbar() {
             >
               Download
             </Link>
-            <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white">Get Started</Button>
+            <Button className="w-full bg-gradient-to-r from-red-500 to-purple-600 text-white">Get Started</Button>
           </div>
         </div>
       )}

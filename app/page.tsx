@@ -59,7 +59,7 @@ export default function Home() {
         <DeviceShowcase />
 
         <section id="download" className="py-20 text-center">
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 max-w-5xl mx-auto shadow-xl">
+          <div className="bg-gradient-to-r from-red-500 to-purple-600 rounded-3xl p-12 max-w-5xl mx-auto shadow-xl">
             <h2 className="text-3xl font-bold text-white mb-6">Experience AI on Your Device Today</h2>
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
               Download Inferra now and unlock the power of on-device AI with privacy, performance, and personalization.
