@@ -18,7 +18,7 @@ export default function TermsConditions() {
             <h1 className="text-4xl font-bold mb-6">Terms & Conditions</h1>
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                Last updated: April 30, 2025
+                Last updated: June 29, 2025
               </p>
 
               <h2>1. Agreement to Terms</h2>
@@ -89,8 +89,7 @@ export default function TermsConditions() {
                 The App integrates with third-party services:
               </p>
               <ul>
-                <li>Firebase Authentication and Firestore for account management</li>
-                <li>Google and GitHub authentication providers</li>
+                <li>Google authentication provider</li>
                 <li>Various external API services for security and functionality</li>
               </ul>
               <p>

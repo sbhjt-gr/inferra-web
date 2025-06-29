@@ -18,15 +18,15 @@ export default function PrivacyPolicy() {
             <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                Last updated: June 11, 2025
+                Last updated: June 29, 2025
               </p>
 
               <h2>1. Introduction</h2>
               <p>
-                Ragionare/Inferra ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application ("App").
+                Inferra ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application ("App").
               </p>
               <p>
-                By using Ragionare/Inferra, you agree to the collection and use of information in accordance with this policy.
+                By using Inferra, you agree to the collection and use of information in accordance with this policy.
               </p>
 
               <h2>2. Information We Collect</h2>
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
               <ul>
                 <li>Email address</li>
                 <li>Name/display name</li>
-                <li>Authentication method (email/password, Google, or GitHub sign-in)</li>
+                <li>Authentication method (email/password, Google)</li>
               </ul>
 
               <h3>2.2 Device Information</h3>
@@ -79,7 +79,6 @@ export default function PrivacyPolicy() {
                 Your account information is stored:
               </p>
               <ul>
-                <li>In Firebase Authentication and Firestore database</li>
                 <li>Securely on your device using Expo SecureStore for authentication state</li>
               </ul>
               <p>
@@ -101,9 +100,7 @@ export default function PrivacyPolicy() {
                 We use the following third-party services:
               </p>
               <ul>
-                <li>Firebase (Authentication, Firestore) - for account management and security</li>
                 <li>Google Authentication - optional sign-in method</li>
-                <li>GitHub Authentication - optional sign-in method</li>
                 <li>IP information services (for security purposes only)</li>
               </ul>
               <p>
