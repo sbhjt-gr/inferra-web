@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     }
 
     const deletionToken = generateDeletionToken()
-    const expiryTime = new Date(Date.now() + 24 * 60 * 60 * 1000) // 24 hours
+    const expiryTime = new Date(Date.now() + 24 * 60 * 60 * 1000)
 
     try {
       await sendDeletionConfirmationEmail(email, deletionToken)
