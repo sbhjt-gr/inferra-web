@@ -8,6 +8,7 @@ interface Report {
   id: string;
   messageContent: string;
   provider: string;
+  modelName?: string | null;
   category: string;
   description: string;
   email: string;
@@ -22,12 +23,12 @@ interface Report {
   resolution?: string;
   attachments?: Array<{
     fileName: string;
-    storedFileName: string;
     fileSize: number;
     fileType: string;
-    type: 'image' | 'video';
+    type: 'image';
     url: string;
     uploadedAt: string;
+    base64Data: string;
   }> | null;
   attachmentCount?: number;
 }
@@ -152,6 +153,11 @@ export default function ReportsPage() {
                       <span className="text-sm text-gray-500">
                         Provider: {report.provider}
                       </span>
+                      {report.modelName && (
+                        <span className="text-sm text-gray-500">
+                          Model: {report.modelName}
+                        </span>
+                      )}
                       <span className="text-sm text-gray-500">
                         Platform: {report.platform}
                       </span>
@@ -207,31 +213,17 @@ export default function ReportsPage() {
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {report.attachments.map((attachment, index) => (
                           <div key={index} className="relative bg-gray-50 rounded-lg overflow-hidden">
-                            {attachment.type === 'image' ? (
-                              <div className="aspect-square">
-                                <img
-                                  src={attachment.url}
-                                  alt={`Attachment ${index + 1}`}
-                                  className="w-full h-full object-cover cursor-pointer hover:opacity-80"
-                                  onClick={() => window.open(attachment.url, '_blank')}
-                                />
-                              </div>
-                            ) : attachment.type === 'video' ? (
-                              <div className="aspect-square relative">
-                                <video
-                                  src={attachment.url}
-                                  className="w-full h-full object-cover cursor-pointer"
-                                  controls
-                                  preload="metadata"
-                                />
-                                <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded">
-                                  VIDEO
-                                </div>
-                              </div>
-                            ) : null}
+                            <div className="aspect-square">
+                              <img
+                                src={attachment.url}
+                                alt={`Attachment ${index + 1}`}
+                                className="w-full h-full object-cover cursor-pointer hover:opacity-80"
+                                onClick={() => window.open(attachment.url, '_blank')}
+                              />
+                            </div>
                             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-xs p-2">
                               <div className="truncate">{attachment.fileName}</div>
-                              <div>{(attachment.fileSize / 1024 / 1024).toFixed(1)} MB</div>
+                              <div>{(attachment.fileSize / 1024).toFixed(1)} KB</div>
                             </div>
                           </div>
                         ))}

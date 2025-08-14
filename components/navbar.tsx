@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Moon, Sun } from "lucide-react"
@@ -8,7 +8,12 @@ import { useTheme } from "next-themes"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -51,7 +56,11 @@ export default function Navbar() {
               Download
             </Link>
             <Button onClick={toggleTheme} variant="ghost" size="icon">
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {mounted ? (
+                theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />
+              ) : (
+                <div className="h-5 w-5" />
+              )}
             </Button>
             <Button className="bg-gradient-to-r from-red-500 to-purple-600 text-white">Get Started</Button>
           </div>
@@ -59,7 +68,11 @@ export default function Navbar() {
           {/* Mobile Navigation Toggle */}
           <div className="flex md:hidden items-center space-x-2">
             <Button onClick={toggleTheme} variant="ghost" size="icon">
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {mounted ? (
+                theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />
+              ) : (
+                <div className="h-5 w-5" />
+              )}
             </Button>
             <Button onClick={toggleMenu} variant="ghost" size="icon">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
