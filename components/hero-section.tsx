@@ -9,14 +9,14 @@ export default function HeroSection() {
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             <span className="bg-gradient-to-r from-red-500 to-purple-600 text-transparent bg-clip-text">
-              AI on Your Device
+              Your Private AI Assistant
             </span>
             <br />
-            Privacy. Performance. Personalization.
+            On-Device. Vision-Capable. Network-Shared.
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-            Inferra brings powerful AI models directly to your device, ensuring privacy, offline accessibility, and high
-            performance without compromising on capabilities.
+            Run powerful LLMs entirely on your device with multimodal vision, document processing, and local network sharing. 
+            Access your AI from any device on your WiFi—no cloud required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-gradient-to-r from-red-500 to-purple-600 text-white">
